@@ -1,9 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { UIViewsModule } from './ui-compotents/ui-components.module';
+
+import { DashboardModule } from './views/dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
@@ -12,9 +17,14 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule,
+    UIViewsModule,
+    DashboardModule
   ],
-  providers: [],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'en' }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

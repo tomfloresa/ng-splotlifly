@@ -1,0 +1,24 @@
+.sp-track-card {
+    padding: 10px;
+    &__image {
+        float: left;
+        height: 150px;
+        width: 150px;
+        margin-right: 5px;
+    }
+
+    &__content {
+        overflow: hidden;
+    }
+
+    &__name {
+        font-size: 18px;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    &__disc {
+        font-size: 12px;
+        display: block;
+    }
+}

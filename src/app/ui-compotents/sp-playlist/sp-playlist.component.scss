@@ -1,0 +1,24 @@
+.sp-playlist {
+    &-header {
+        &__image {
+            float: left;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+
+        &__content {
+            overflow: hidden;
+        }
+
+        &__name {
+            font-size: 18px;
+            display: block;
+        }
+
+        &__songs {
+            display: block;
+        }
+    }
+}
